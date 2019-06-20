@@ -1,0 +1,36 @@
+namespace org.unblock.participant.template
+
+import org.unblock.application.template.*
+
+abstract participant ParticipantTemp identified by userKey {
+  o String userKey
+  o Name name
+  o Contact contact
+}
+
+participant Officer extends ParticipantTemp{
+  o Level level
+  o Department department
+  o Role role
+}
+
+enum Level{
+  o Local
+  o State
+  o Central
+}
+
+enum Role {
+  o Verifier
+  o Autherizer
+}
+
+enum Department{
+  o Department1
+  o Department2
+  o Department3
+}
+
+participant User extends ParticipantTemp {
+  
+}

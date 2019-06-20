@@ -22,7 +22,7 @@ abstract asset ApplicationTemp identified by applicationId {
   o String applicationId
   o Name applicantName
   o DateTime applicantDOB
-  o Integer gender
+  o Gender gender
   o Contact contact
   o Address address
 }
@@ -46,3 +46,8 @@ concept Address {
   o String country default = "INDIA"  
 }
 
+enum Gender {
+  o Male
+  o Female
+  o Other
+}

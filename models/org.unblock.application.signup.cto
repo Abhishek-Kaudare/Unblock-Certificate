@@ -10,4 +10,3 @@ transaction submitApplication {
   o String applicationId
   o Integer applicationStatus default=0
 }
-
