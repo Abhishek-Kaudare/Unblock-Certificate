@@ -1,0 +1,13 @@
+namespace org.unblock.application.signup
+
+import org.unblock.application.template.ApplicationTemp
+
+asset SignUpApplication extends ApplicationTemp{
+
+}
+
+transaction submitApplication {
+  o String applicationId
+  o Integer applicationStatus default=0
+}
+
